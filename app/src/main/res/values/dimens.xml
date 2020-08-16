@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imgbtnFacebook">120dp</dimen>
+    <dimen name="imgbtnFacebookTop">200dp</dimen>
+    <dimen name="tzbasicInfoColumn">290dp</dimen>
+    <dimen name="tzbasicInfoColumnHeight">50dp</dimen>
+</resources>

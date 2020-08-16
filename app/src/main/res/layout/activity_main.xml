@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:id="@+id/e_stationary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="@string/logoContentDescription"
+            app:srcCompat="@drawable/e_stationary_logo"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <Button
+            android:id="@+id/btnLoginTemp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnRegistrationTemp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="125dp"
+            android:background="#FDC149"
+            android:fontFamily="@font/abril_fatface"
+            android:text="@string/login"
+            android:textColor="#912503"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <Button
+            android:id="@+id/btnRegistrationTemp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="120dp"
+            android:background="#FDC149"
+            android:fontFamily="@font/abril_fatface"
+            android:text="@string/registration"
+            android:textColor="#912503"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <ImageButton
+            android:id="@+id/imgbtnFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="@dimen/imgbtnFacebookTop"
+            android:contentDescription="@string/facebookContentDescription"
+            android:padding="0dp"
+            app:srcCompat="@drawable/facebook_logo" />
+
+        <ImageButton
+            android:id="@+id/imgbtnGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/imgbtnFacebookTop"
+            android:layout_marginEnd="@dimen/imgbtnFacebook"
+            android:contentDescription="@string/gmailContentDescription"
+            android:padding="0dp"
+            app:srcCompat="@drawable/gmail_logo" />
+
+        <TextView
+            android:id="@+id/txtLoginWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e_stationary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:gravity="center_horizontal"
+            android:text="@string/orLoginWith"
+            android:textSize="12sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtUsername"
+            android:layout_width="@dimen/tzbasicInfoColumn"
+            android:layout_height="@dimen/tzbasicInfoColumnHeight"
+            android:layout_below="@+id/txtLoginWith"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="start"
+            android:hint="@string/username"
+            android:background="@drawable/taozhemainpagestyle"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="@dimen/tzbasicInfoColumn"
+            android:layout_height="@dimen/tzbasicInfoColumnHeight"
+            android:background="@drawable/taozhemainpagestyle"
+            android:layout_below="@+id/txtUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:gravity="start"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:autofillHints="@string/password"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:background="@color/defaultBackground"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.1"
+            android:text="@string/login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/chkboxKeepLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/keepMeLogin"
+            android:textColor="@color/hint"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/txtbtnForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnLogin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/hint"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="50dp"/>
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
