@@ -19,6 +19,16 @@
     <string name="register">Register</string>
     <string name="talkToUs">Talk to Us</string>
     <string name="complain">Complain</string>
-    <string name="complaintCategories">Complaint categories</string>
-
+    <string name="complaintCategories">Complaint categories:</string>
+    <string name="lateDelivery">Late Delivery</string>
+    <string name="faultyProducts">Faulty Products</string>
+    <string name="unreasonablePrice">Unreasonable Price</string>
+    <string name="poorHospitality">Poor Hospitality</string>
+    <string name="others">Others</string>
+    <string name="orderNo">Order No</string>
+    <string name="complaint">Complaint</string>
+    <string name="send">Send</string>
+    <string name="typeYourMessageHere">Type your message here</string>
+    <string name="aboutUs">Our Office:\n\nE-Stationary Sdn Bhd\n69, Jalan Tun Sambanthan
+    \n51200, Kuala Lumpur\n\n\nEmail: e-stationary@outlook.com\n\n\nCALL:\nWong Tao Zhe                  011-1111111</string>
 </resources>

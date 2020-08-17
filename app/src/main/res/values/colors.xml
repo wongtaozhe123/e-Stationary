@@ -6,4 +6,5 @@
     <color name="loginPage">#F56E07</color>
     <color name="hint">#616060</color>
     <color name="defaultBackground">#FFFF9800</color>
+    <color name="complainCategoriesButton">#FEDE8C</color>
 </resources>
