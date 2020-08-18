@@ -5,164 +5,235 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-        <ScrollView
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <RelativeLayout
+            <ImageView
+                android:id="@+id/e_stationary"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="100dp"
+                android:contentDescription="@string/logoContentDescription"
+                app:srcCompat="@drawable/e_stationary_logo"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="40dp" />
 
-                <ImageView
-                    android:id="@+id/e_stationary"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:contentDescription="@string/logoContentDescription"
-                    app:srcCompat="@drawable/e_stationary_logo"
-                    tools:layout_editor_absoluteX="30dp"
-                    tools:layout_editor_absoluteY="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/e_stationary"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/amaranth"
+                android:text="@string/complaintCategories"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/e_stationary"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/amaranth"
-                    android:text="@string/complaintCategories"
-                    android:textColor="#020202"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btnLateDelivery"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/e_stationary"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/tzcomplain"
+                android:fontFamily="@font/amaranth"
+                android:letterSpacing="0.05"
+                android:text="@string/lateDelivery"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnLateDelivery"
-                    android:layout_width="130dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@+id/e_stationary"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="60dp"
-                    android:background="@drawable/tzcomplain"
-                    android:fontFamily="@font/amaranth"
-                    android:letterSpacing="0.05"
-                    android:text="@string/lateDelivery"
-                    android:textAllCaps="false"
-                    android:textSize="13dp"
-                    android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnFaultyProducts"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/e_stationary"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toEndOf="@+id/btnLateDelivery"
+                android:background="@drawable/tzcomplain"
+                android:fontFamily="@font/amaranth"
+                android:letterSpacing="0.05"
+                android:text="@string/faultyProducts"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnFaultyProducts"
-                    android:layout_width="180dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@+id/e_stationary"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_toEndOf="@+id/btnLateDelivery"
-                    android:text="@string/faultyProducts"
-                    android:letterSpacing="0.05"
-                    android:fontFamily="@font/amaranth"
-                    android:textStyle="bold"
-                    android:textAllCaps="false"
-                    android:textSize="13dp"
-                    android:background="@drawable/tzcomplain"/>
+            <Button
+                android:id="@+id/btnUnreasonablePrice"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/btnLateDelivery"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/tzcomplain"
+                android:fontFamily="@font/amaranth"
+                android:letterSpacing="0.05"
+                android:text="@string/unreasonablePrice"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnUnreasonablePrice"
-                    android:layout_width="140dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@id/btnLateDelivery"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/unreasonablePrice"
-                    android:letterSpacing="0.05"
-                    android:fontFamily="@font/amaranth"
-                    android:textStyle="bold"
-                    android:textAllCaps="false"
-                    android:textSize="13dp"
-                    android:background="@drawable/tzcomplain"/>
+            <Button
+                android:id="@+id/btnPoorHospitality"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/btnFaultyProducts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/tzcomplain"
+                android:fontFamily="@font/amaranth"
+                android:letterSpacing="0.05"
+                android:text="@string/poorHospitality"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnPoorHospitality"
-                    android:layout_width="130dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@+id/btnFaultyProducts"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="30dp"
-                    android:text="@string/poorHospitality"
-                    android:letterSpacing="0.05"
-                    android:fontFamily="@font/amaranth"
-                    android:textStyle="bold"
-                    android:textAllCaps="false"
-                    android:textSize="13dp"
-                    android:background="@drawable/tzcomplain"/>
+            <Button
+                android:id="@+id/btncomplainOthers"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/btnUnreasonablePrice"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/tzcomplain"
+                android:fontFamily="@font/amaranth"
+                android:letterSpacing="0.05"
+                android:text="@string/others"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btncomplainOthers"
-                    android:layout_width="180dp"
-                    android:layout_height="30dp"
-                    android:layout_below="@id/btnUnreasonablePrice"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/others"
-                    android:letterSpacing="0.05"
-                    android:fontFamily="@font/amaranth"
-                    android:textStyle="bold"
-                    android:textAllCaps="false"
-                    android:textSize="13dp"
-                    android:background="@drawable/tzcomplain"/>
+            <EditText
+                android:id="@+id/txtOrderNo"
+                android:layout_width="320dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/btncomplainOthers"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:autofillHints="none"
+                android:background="@drawable/taozhemainpagestyle"
+                android:hint="@string/orderNo"
+                android:inputType="text"
+                android:padding="10dp" />
 
-                <EditText
-                    android:id="@+id/txtOrderNo"
-                    android:layout_width="320dp"
-                    android:layout_height="45dp"
-                    android:layout_below="@id/btncomplainOthers"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="40dp"
-                    android:hint="@string/orderNo"
-                    android:inputType="text"
-                    android:background="@drawable/taozhemainpagestyle"
-                    android:padding="10dp"
-                    android:autofillHints="none"/>
+            <EditText
+                android:id="@+id/txtComplainDescription"
+                android:layout_width="320dp"
+                android:layout_height="250dp"
+                android:layout_below="@id/txtOrderNo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:autofillHints="none"
+                android:background="@drawable/taozhemainpagestyle"
+                android:gravity="start"
+                android:hint="@string/complain"
+                android:inputType="textMultiLine"
+                android:maxLines="50"
+                android:padding="10dp" />
 
-                <EditText
-                    android:id="@+id/txtComplainDescription"
-                    android:layout_width="320dp"
-                    android:layout_height="250dp"
-                    android:layout_below="@id/txtOrderNo"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="30dp"
-                    android:hint="@string/complain"
-                    android:inputType="textMultiLine"
-                    android:background="@drawable/taozhemainpagestyle"
-                    android:gravity="start"
-                    android:padding="10dp"
-                    android:maxLines="50"
-                    android:autofillHints="none"/>
+            <TextView
+                android:id="@+id/txtComplaint"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtComplainDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-30dp"
+                android:text="@string/complaint"
+                android:textColor="#000000" />
 
-                <TextView
-                    android:id="@+id/txtComplaint"
-                    android:layout_width="320dp"
-                    android:layout_height="wrap_content"
-                    android:layout_above="@+id/txtComplainDescription"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="-30dp"
-                    android:text="@string/complaint"
-                    android:textColor="#000000" />
+            <Button
+                android:id="@+id/btnSendComplain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtComplainDescription"
+                android:layout_alignEnd="@+id/txtComplainDescription"
+                android:layout_marginTop="-55dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/send" />
 
-                <Button
-                    android:id="@+id/btnSendComplain"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txtComplainDescription"
-                    android:layout_alignEnd="@+id/txtComplainDescription"
-                    android:layout_marginTop="-55dp"
-                    android:layout_marginEnd="10dp"
-                    android:text="@string/send" />
+        </RelativeLayout>
+    </ScrollView>
 
-            </RelativeLayout>
-        </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="650dp"
+        android:background="@color/defaultBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:layout_marginBottom="@dimen/icon_margin"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/icon_padding"
+            android:paddingTop="@dimen/icon_padding"
+            android:paddingRight="@dimen/icon_padding"
+            android:paddingBottom="@dimen/icon_padding"
+            app:srcCompat="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:layout_marginBottom="@dimen/icon_margin"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/icon_padding"
+            android:paddingTop="@dimen/icon_padding"
+            android:paddingRight="@dimen/icon_padding"
+            android:paddingBottom="@dimen/icon_padding"
+            app:srcCompat="@drawable/customer_service" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:layout_marginBottom="@dimen/icon_margin"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/icon_padding"
+            android:paddingTop="@dimen/icon_padding"
+            android:paddingRight="@dimen/icon_padding"
+            android:paddingBottom="@dimen/icon_padding"
+            app:srcCompat="@drawable/shopping_cart" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_margin"
+            android:layout_marginTop="@dimen/icon_margin"
+            android:layout_marginRight="@dimen/icon_margin"
+            android:layout_marginBottom="@dimen/icon_margin"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/icon_padding"
+            android:paddingTop="@dimen/icon_padding"
+            android:paddingRight="@dimen/icon_padding"
+            android:paddingBottom="@dimen/icon_padding"
+            app:srcCompat="@drawable/user" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:background="@color/defaultBackground"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:paddingTop="50dp"
+                app:srcCompat="@drawable/user_icon" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@android:color/black"
+            app:tabTextColor="@android:color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Wishlist" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Orders" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="411dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/defaultBackground"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/customer_service" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/shopping_cart" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/user" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

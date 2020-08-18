@@ -4,4 +4,6 @@
     <dimen name="imgbtnFacebookTop">200dp</dimen>
     <dimen name="tzbasicInfoColumn">290dp</dimen>
     <dimen name="tzbasicInfoColumnHeight">50dp</dimen>
+    <dimen name="icon_margin">10dp</dimen>
+    <dimen name="icon_padding">5dp</dimen>
 </resources>
