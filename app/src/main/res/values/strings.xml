@@ -31,4 +31,16 @@
     <string name="typeYourMessageHere">Type your message here</string>
     <string name="aboutUs">Our Office:\n\nE-Stationary Sdn Bhd\n69, Jalan Tun Sambanthan
     \n51200, Kuala Lumpur\n\n\nEmail: e-stationary@outlook.com\n\n\nCALL:\nWong Tao Zhe                  011-1111111</string>
+    <string name="shoppingCartTitle">SHOPPING CART</string>
+    <string name="deliveryDetailsTitle">DELIVERY DETAILS</string>
+    <string name="paymentTitle">PAYMENT</string>
+    <string name="doneTitle">DONE</string>
+    <string name="LogoDescription">Logo Description</string>
+    <string name="shoppingCartTitleIcon">SHOPPING CART ICON</string>
+    <string name="deliveryDetailsTitleIcon">DELIVERY DETAILS ICON</string>
+    <string name="paymentTitleIcon">PAYMENT ICON</string>
+    <string name="doneTitleIcon">DONE ICON</string>
+    <string name="address">&#032;&#032;Delivery Address</string>
+
+
 </resources>
