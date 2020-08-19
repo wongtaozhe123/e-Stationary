@@ -7,4 +7,6 @@
     <color name="hint">#616060</color>
     <color name="defaultBackground">#FFFF9800</color>
     <color name="complainCategoriesButton">#FEDE8C</color>
+    <color name="titleBorder">#707070</color>
+    <color name="titleBackground">#EEEEEE</color>
 </resources>
