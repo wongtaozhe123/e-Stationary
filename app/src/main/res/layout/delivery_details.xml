@@ -83,7 +83,7 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/shoppingCart" />
+                    app:srcCompat="@drawable/shopping_cart_white" />
 
                 <ImageButton
                     android:id="@+id/imageButton4"
@@ -97,7 +97,7 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/imageButton3"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/deliveryDetailYellow" />
+                    app:srcCompat="@drawable/delivery_detail_yellow" />
 
                 <ImageButton
                     android:id="@+id/imageButton5"

@@ -57,7 +57,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:contentDescription="@string/LogoDescription"
-                    app:srcCompat="@drawable/paymentIcon" />
+                    app:srcCompat="@drawable/payment_icon" />
 
 
             </RelativeLayout>
@@ -83,7 +83,7 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/shoppingCart" />
+                    app:srcCompat="@drawable/shopping_cart_white" />
 
                 <ImageButton
                     android:id="@+id/imageButton4"
@@ -97,7 +97,7 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/imageButton3"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/deliveryDetail" />
+                    app:srcCompat="@drawable/delivery_detail" />
 
                 <ImageButton
                     android:id="@+id/imageButton5"
@@ -111,7 +111,7 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/imageButton4"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/paymentYellow" />
+                    app:srcCompat="@drawable/payment_yellow" />
 
                 <ImageButton
                     android:id="@+id/imageButton6"
