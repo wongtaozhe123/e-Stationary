@@ -174,7 +174,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/imgbtnHome"
                     android:layout_width="112dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/icon_margin"
@@ -190,7 +190,7 @@
                     app:srcCompat="@drawable/home" />
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/imgbtnCustService"
                     android:layout_width="103dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/icon_margin"
@@ -206,7 +206,7 @@
                     app:srcCompat="@drawable/customer_service" />
 
                 <ImageButton
-                    android:id="@+id/imageButton10"
+                    android:id="@+id/imgbtnCart"
                     android:layout_width="103dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/icon_margin"
@@ -222,7 +222,7 @@
                     app:srcCompat="@drawable/shopping_cart" />
 
                 <ImageButton
-                    android:id="@+id/imageButton11"
+                    android:id="@+id/imgbtnAccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/icon_margin"
