@@ -20,7 +20,9 @@
                 android:layout_width="162dp"
                 android:layout_height="27dp"
                 android:layout_below="@+id/toolbar"
-                android:layout_marginLeft="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="57dp"
                 android:background="@drawable/tzcomplain"
                 android:text="writing Instruments" />
@@ -52,17 +54,21 @@
                 android:layout_width="164dp"
                 android:layout_height="24dp"
                 android:layout_below="@+id/toolbar"
-                android:layout_marginLeft="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/tzcomplain"
                 android:text="Ink and Toner" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="174dp"
-                android:layout_height="23dp"
+                android:layout_width="184dp"
+                android:layout_height="19dp"
                 android:layout_below="@+id/toolbar"
-                android:layout_marginLeft="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="94dp"
                 android:background="@drawable/tzcomplain"
                 android:text="Cards and Labels" />
@@ -73,8 +79,11 @@
                 android:layout_height="25dp"
                 android:layout_below="@+id/toolbar"
                 android:layout_alignParentRight="true"
+                android:layout_marginStart="47dp"
                 android:layout_marginTop="18dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/button2"
                 android:background="@drawable/tzcomplain"
                 android:text="Paper and Pad" />
 
@@ -84,10 +93,13 @@
                 android:layout_height="27dp"
                 android:layout_below="@+id/toolbar"
                 android:layout_alignParentRight="true"
+                android:layout_marginStart="57dp"
                 android:layout_marginTop="57dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/button3"
                 android:background="@drawable/tzcomplain"
-                android:text="Filing and Storage" />
+                android:text="Filings" />
 
             <Button
                 android:id="@+id/button7"
@@ -95,81 +107,138 @@
                 android:layout_height="21dp"
                 android:layout_below="@+id/toolbar"
                 android:layout_alignParentRight="true"
+                android:layout_marginStart="64dp"
                 android:layout_marginTop="96dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/button4"
                 android:background="@drawable/tzcomplain"
                 android:text="Stamps" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="670dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/defaultBackground"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtnHome"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCustService"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/customer_service" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCart"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/shopping_cart" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/user" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/button4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="48dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/file_img" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imageButton"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="45dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/paper_clip_img" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/button7"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="60dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/palette_img" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imageButton13"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="61dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/highlighter_img" />
+
+
 
         </RelativeLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="650dp"
-        android:background="@color/defaultBackground"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/icon_margin"
-            android:layout_marginTop="@dimen/icon_margin"
-            android:layout_marginRight="@dimen/icon_margin"
-            android:layout_marginBottom="@dimen/icon_margin"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/icon_padding"
-            android:paddingTop="@dimen/icon_padding"
-            android:paddingRight="@dimen/icon_padding"
-            android:paddingBottom="@dimen/icon_padding"
-            app:srcCompat="@drawable/home" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/icon_margin"
-            android:layout_marginTop="@dimen/icon_margin"
-            android:layout_marginRight="@dimen/icon_margin"
-            android:layout_marginBottom="@dimen/icon_margin"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/icon_padding"
-            android:paddingTop="@dimen/icon_padding"
-            android:paddingRight="@dimen/icon_padding"
-            android:paddingBottom="@dimen/icon_padding"
-            app:srcCompat="@drawable/customer_service" />
-
-        <ImageButton
-            android:id="@+id/imageButton3"
-            android:layout_width="103dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/icon_margin"
-            android:layout_marginTop="@dimen/icon_margin"
-            android:layout_marginRight="@dimen/icon_margin"
-            android:layout_marginBottom="@dimen/icon_margin"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/icon_padding"
-            android:paddingTop="@dimen/icon_padding"
-            android:paddingRight="@dimen/icon_padding"
-            android:paddingBottom="@dimen/icon_padding"
-            app:srcCompat="@drawable/shopping_cart" />
-
-        <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/icon_margin"
-            android:layout_marginTop="@dimen/icon_margin"
-            android:layout_marginRight="@dimen/icon_margin"
-            android:layout_marginBottom="@dimen/icon_margin"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/icon_padding"
-            android:paddingTop="@dimen/icon_padding"
-            android:paddingRight="@dimen/icon_padding"
-            android:paddingBottom="@dimen/icon_padding"
-            app:srcCompat="@drawable/user" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
