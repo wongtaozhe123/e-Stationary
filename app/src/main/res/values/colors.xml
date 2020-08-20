@@ -9,4 +9,6 @@
     <color name="complainCategoriesButton">#FEDE8C</color>
     <color name="titleBorder">#707070</color>
     <color name="titleBackground">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_red">#FF5757</color>
 </resources>

@@ -40,7 +40,28 @@
     <string name="deliveryDetailsTitleIcon">DELIVERY DETAILS ICON</string>
     <string name="paymentTitleIcon">PAYMENT ICON</string>
     <string name="doneTitleIcon">DONE ICON</string>
-    <string name="address">&#032;&#032;Delivery Address</string>
-
-
+    <string name="address">Delivery Address:</string>
+    <string name="postal">Postal Code:</string>
+    <string name="city">City:</string>
+    <string name="states">States:</string>
+    <string name="additionalInformation">Additional Information:</string>
+    <string name="clearCart">Clear Shopping Cart</string>
+    <string name="nextButton">Next</string>
+    <string name="backButton">Back</string>
+    <string-array name="state_choice">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Malacca</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+    </string-array>
+    <string name="orderSuccess">Your Order Had Been Placed Successfully</string>
 </resources>

@@ -127,6 +127,68 @@
                     app:layout_constraintStart_toEndOf="@+id/imageButton5"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/done_yellow" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/clear_cart_button"
+                    android:padding="10dp"
+
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="199dp"
+                            android:layout_height="58dp"
+                            android:layout_marginStart="87dp"
+                            android:layout_marginLeft="87dp"
+                            android:layout_marginEnd="86dp"
+                            android:layout_marginRight="86dp"
+                            android:text="@string/orderSuccess"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="104dp"
+                            android:layout_height="wrap_content"
+                            android:text="TextView" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TextView" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </TableLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
