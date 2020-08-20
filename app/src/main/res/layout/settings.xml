@@ -25,9 +25,17 @@
             <ImageButton
                 android:id="@+id/imgbtnProfPic"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="100dp"
                 android:background="@android:drawable/menuitem_background"
                 app:srcCompat="@drawable/user_icon" />
+
+            <Button
+                android:id="@+id/btnChangeProfPic"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:drawable/menuitem_background"
+                android:text="Change Profile Picture"
+                android:textColor="@color/colorPrimaryDark" />
 
             <TextView
                 android:id="@+id/txtName"
