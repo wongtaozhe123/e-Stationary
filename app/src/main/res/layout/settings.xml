@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/settingsBackground">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/imgbtnBack"
@@ -42,7 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
-                android:text="Name" />
+                android:text="Name"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputName"
@@ -59,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingTop="20dp"
-                android:text="Password" />
+                android:text="Password"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputPassword"
@@ -75,7 +77,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingTop="20dp"
-                android:text="Phone Number" />
+                android:text="Phone Number"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputPhoneNo"
@@ -90,7 +93,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
-                android:text="Email Address" />
+                android:text="Email Address"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputEmail"
@@ -105,7 +109,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
-                android:text="Gender" />
+                android:text="Gender"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputGender"
@@ -121,7 +126,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
-                android:text="Birthday" />
+                android:text="Birthday"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputBirthday"
@@ -136,7 +142,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
-                android:text="Address" />
+                android:text="Address"
+                android:textColor="@android:color/black" />
 
             <EditText
                 android:id="@+id/inputAddress"

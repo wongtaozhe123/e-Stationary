@@ -11,4 +11,5 @@
     <color name="titleBackground">#EEEEEE</color>
     <color name="white">#FFFFFF</color>
     <color name="light_red">#FF5757</color>
+    <color name="settingsBackground">#97FF9800</color>
 </resources>
