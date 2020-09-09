@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,14 +19,49 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-16dp">
 
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/tzSwipeViewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tzLoginRegister"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginTop="120dp"-->
+<!--            app:tabBackground="@color/tzswipe"-->
+<!--            app:tabTextColor="#912503"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tzSwipeLogin"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/abril_fatface"-->
+<!--                android:text="Login"-->
+<!--                android:visibility="visible" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tzSwipeRegister"-->
+<!--                android:layout_width="125dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="200dp"-->
+<!--                android:layout_marginTop="120dp"-->
+<!--                android:fontFamily="@font/abril_fatface"-->
+<!--                android:text="Registration" />-->
+<!--        </com.google.android.material.tabs.TabLayout>-->
+
         <ImageView
             android:id="@+id/e_stationary"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:contentDescription="@string/logoContentDescription"
             app:srcCompat="@drawable/e_stationary_logo"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="40dp" />
+            android:textColor="#912503"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="189dp"/>
 
         <Button
             android:id="@+id/btnLoginTemp"
@@ -90,13 +127,14 @@
 
         <AutoCompleteTextView
             android:id="@+id/txtUsername"
+            android:inputType="textEmailAddress"
             android:layout_width="@dimen/tzbasicInfoColumn"
             android:layout_height="@dimen/tzbasicInfoColumnHeight"
             android:layout_below="@+id/txtLoginWith"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:gravity="start"
-            android:hint="@string/username"
+            android:hint="Email Address"
             android:background="@drawable/taozhemainpagestyle"
             android:padding="10dp"/>
 
@@ -153,6 +191,7 @@
             android:clickable="true"
             android:focusable="true"
             android:layout_marginBottom="50dp"/>
+
     </RelativeLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
