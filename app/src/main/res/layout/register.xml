@@ -15,7 +15,41 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-16dp">
 
-    <ImageView
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            android:id="@+id/tzSwipeViewPager"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tzLoginRegister"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginTop="120dp"-->
+<!--            app:tabBackground="@color/tzswipe"-->
+<!--            app:tabTextColor="#912503"-->
+<!--            tools:ignore="MissingConstraints">-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tzSwipeLogin"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/abril_fatface"-->
+<!--                android:text="Login"-->
+<!--                android:visibility="visible" />-->
+
+<!--            <com.google.android.material.tabs.TabItem-->
+<!--                android:id="@+id/tzSwipeRegister"-->
+<!--                android:layout_width="125dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="200dp"-->
+<!--                android:layout_marginTop="120dp"-->
+<!--                android:fontFamily="@font/abril_fatface"-->
+<!--                android:text="Registration" />-->
+<!--        </com.google.android.material.tabs.TabLayout>-->
+
+        <ImageView
         android:id="@+id/e_stationary"
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -187,6 +221,16 @@
             android:fontFamily="sans-serif"
             android:textColor="#FFFFFF"
             android:background="@color/defaultBackground"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="450dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
 
     </RelativeLayout>
     </ScrollView>
