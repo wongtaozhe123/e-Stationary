@@ -6,17 +6,23 @@ import android.os.Bundle
 import android.service.autofill.RegexValidator
 import android.util.Log
 import android.util.Patterns
+import android.view.MotionEvent
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.r0adkll.slidr.Slidr
+import com.r0adkll.slidr.model.SlidrInterface
 import kotlinx.android.synthetic.main.register.*
 import java.util.regex.Pattern
 
 public class Register : AppCompatActivity() {
-
+    var x1:Float = 0.0F
+    var x2:Float = 0.0F
+    var y1:Float = 0.0F
+    var y2:Float = 0.0F
     val passwordPattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,20}$")
     private lateinit var auth: FirebaseAuth;
     private lateinit var db: DocumentReference
@@ -38,6 +44,7 @@ public class Register : AppCompatActivity() {
                             else{
                                 if(passwordPattern.matcher(txtPasswordRegister.text.toString()).matches()){
                                     if(chkboxAgreeTnC.isChecked){
+
                                         createUser(txtEmail.text.toString(),txtPasswordRegister.text.toString())
                                     }
                                     else{
@@ -101,4 +108,5 @@ public class Register : AppCompatActivity() {
             }
         }
     }
+
 }
