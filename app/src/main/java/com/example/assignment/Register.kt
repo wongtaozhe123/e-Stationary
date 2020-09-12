@@ -19,10 +19,7 @@ import kotlinx.android.synthetic.main.register.*
 import java.util.regex.Pattern
 
 public class Register : AppCompatActivity() {
-    var x1:Float = 0.0F
-    var x2:Float = 0.0F
-    var y1:Float = 0.0F
-    var y2:Float = 0.0F
+
     val passwordPattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,20}$")
     private lateinit var auth: FirebaseAuth;
     private lateinit var db: DocumentReference
