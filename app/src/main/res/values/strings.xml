@@ -69,4 +69,5 @@
     <string name="checkbox">tzData.checkbox</string>
     <string name="email">tzData.email</string>
     <string name="passwor">tzData.passwor</string>
+    <string name="resetDescription">Forget your Password? don\'t worry we\'ve got your back</string>
 </resources>
