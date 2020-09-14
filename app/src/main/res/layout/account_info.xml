@@ -39,29 +39,21 @@
             </LinearLayout>
 
             <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:tabBackground="@android:color/black"
                 app:tabTextColor="@android:color/white">
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tabWishlist"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="My Wishlist" />
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tabOrders"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="My Orders" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tabNotif"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Notifications" />
             </com.google.android.material.tabs.TabLayout>
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
             <RelativeLayout
                 android:layout_width="match_parent"

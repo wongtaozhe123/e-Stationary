@@ -6,4 +6,9 @@
     <dimen name="tzbasicInfoColumnHeight">50dp</dimen>
     <dimen name="icon_margin">10dp</dimen>
     <dimen name="icon_padding">5dp</dimen>
+    <dimen name="textMargin">20dp</dimen>
+    <dimen name="spacing">20dp</dimen>
+    <dimen name="notif_dets">300dp</dimen>
+    <dimen name="notf_Img_width">150dp</dimen>
+    <dimen name="notf_Img_height">70dp</dimen>
 </resources>
