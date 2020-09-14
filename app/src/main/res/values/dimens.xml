@@ -11,4 +11,6 @@
     <dimen name="notif_dets">300dp</dimen>
     <dimen name="notf_Img_width">150dp</dimen>
     <dimen name="notf_Img_height">70dp</dimen>
+    <dimen name="wishlist_height">130dp</dimen>
+    <dimen name="order_height">160dp</dimen>
 </resources>

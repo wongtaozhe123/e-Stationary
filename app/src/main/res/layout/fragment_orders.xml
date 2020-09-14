@@ -1,14 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.OrdersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Orders Fragment" />
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_height"
+            android:layout_marginBottom="@dimen/spacing"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order No 2744736"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/orderdate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Placed on 24 May 2019  13:15:20"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/orderdate1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paid on 24 May 2019  13:18:45"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgorder1"
+                    android:layout_width="@dimen/notf_Img_width"
+                    android:layout_height="@dimen/notf_Img_height"
+                    android:layout_weight="1"
+                    tools:src="@drawable/paper_clip_img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orderdet1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Paper Clip"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/orderdet1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Color Family: Multicolor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/orderdet1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="X 1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/orderdet1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Pending"
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/orderdet1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total: RM0.60"
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_height"
+            android:layout_marginBottom="@dimen/spacing"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order No 2744341"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/orderdate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Placed on 5 May 2019  20:19:24"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/orderdate2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paid on 5 May 2019  20:23:45"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgorder2"
+                    android:layout_width="@dimen/notf_Img_width"
+                    android:layout_height="@dimen/notf_Img_height"
+                    android:layout_weight="1"
+                    tools:src="@drawable/parker_pen_img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/orderdet2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Parker Pen"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/orderdet2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Color Family: Silver"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/orderdet2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="X 1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/orderdet2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Delivered"
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/holo_red_dark" />
+
+                    <TextView
+                        android:id="@+id/orderdet2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total: RM25.00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>

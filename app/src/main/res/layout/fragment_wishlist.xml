@@ -1,14 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addToCart4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.WishlistFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Wishlist Fragment" />
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wishlist_height"
+            android:layout_marginTop="@dimen/spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgitem1"
+                android:layout_width="@dimen/notf_Img_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:src="@drawable/paper_clip_img" />
+
+            <LinearLayout
+                android:layout_width="@dimen/notif_dets"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paper Clip"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4sp"
+                    android:text="Color Family: Multicolor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="RM0.60"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/remove1"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/remove" />
+
+                    <ImageView
+                        android:id="@+id/addToCart1"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/addtocart" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wishlist_height"
+            android:layout_marginTop="@dimen/spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/highlighter_img" />
+
+            <LinearLayout
+                android:layout_width="@dimen/notif_dets"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Highlighter"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4sp"
+                    android:text="Color Family: Yellow"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="RM2.60"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/remove2"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/remove" />
+
+                    <ImageView
+                        android:id="@+id/addToCart2"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/addtocart" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wishlist_height"
+            android:layout_marginTop="@dimen/spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgitem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/highlighter_img"
+                app:srcCompat="@drawable/drawing_board_img" />
+
+            <LinearLayout
+                android:layout_width="@dimen/notif_dets"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drawing Board"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4sp"
+                    android:text="Color Family: White"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="RM57.50"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/remove3"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/remove" />
+
+                    <ImageView
+                        android:id="@+id/addToCart3"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/addtocart" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wishlist_height"
+            android:layout_marginTop="@dimen/spacing"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgitem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/highlighter_img"
+                app:srcCompat="@drawable/parker_pen_img" />
+
+            <LinearLayout
+                android:layout_width="@dimen/notif_dets"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parker Pen"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/item4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4sp"
+                    android:text="Color Family: Silver"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="RM25.00"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/remove4"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/remove" />
+
+                    <ImageView
+                        android:id="@+id/addToCart"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        tools:src="@drawable/addtocart" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

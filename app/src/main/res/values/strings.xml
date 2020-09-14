@@ -70,4 +70,10 @@
     <string name="email">tzData.email</string>
     <string name="passwor">tzData.passwor</string>
     <string name="resetDescription">Forget your Password? don\'t worry we\'ve got your back</string>
+    <string name="welcome">Welcome to our store</string>
+    <string name="welcome_det">You can now buy stationaries online through our application. Delivery is also available.</string>
+    <string name="date1">24-09-2018  16:35</string>
+    <string name="christmas">Christmas Sale</string>
+    <string name="christmas_det">Shop on 25 December for a lot of discounts on several of our products.</string>
+    <string name="date2">03-11-2019  13:30</string>
 </resources>

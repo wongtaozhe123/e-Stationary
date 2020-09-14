@@ -2,6 +2,7 @@ package com.example.assignment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -28,6 +29,7 @@ class AccountInfo:AppCompatActivity() {
 
         viewPager.adapter = viewPagerAdapter
         tabLayout.setupWithViewPager(viewPager)
+
     }
 
     internal class ViewPagerAdapter(fragmentManager: FragmentManager) :
