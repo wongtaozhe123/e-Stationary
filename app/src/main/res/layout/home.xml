@@ -16,6 +16,11 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="logout"
+                android:id="@+id/logout"/>
+            <Button
                 android:id="@+id/button3"
                 android:layout_width="162dp"
                 android:layout_height="27dp"
@@ -234,11 +239,6 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/highlighter_img" />
 
-
-
         </RelativeLayout>
     </ScrollView>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

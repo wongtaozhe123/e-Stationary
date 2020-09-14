@@ -1,21 +1,15 @@
 package com.example.assignment
 
-import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.util.Log
-import android.view.GestureDetector
-import android.view.MotionEvent
 import android.widget.*
-import androidx.core.view.GestureDetectorCompat
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.btnLoginTemp
 import kotlinx.android.synthetic.main.activity_main.btnRegistrationTemp
-import kotlinx.android.synthetic.main.register.*
 
 class MainActivity : AppCompatActivity(){
 
@@ -28,9 +22,6 @@ class MainActivity : AppCompatActivity(){
         var checkbox: String? = preferences.getString("remember","")
         if(checkbox.equals("true")){
             startActivity(Intent(this, Home::class.java))
-        }
-        else{
-            Toast.makeText(this,"Please sign in", Toast.LENGTH_SHORT).show()
         }
         btnLogin.setOnClickListener() {
             if(txtUsername.text.trim().toString().isNotEmpty()&&txtPassword.text.trim().toString().isNotEmpty()){
@@ -52,28 +43,18 @@ class MainActivity : AppCompatActivity(){
                 var editor: SharedPreferences.Editor = preferences.edit()
                 editor.putString("remember","true")
                 editor.apply()
-                Toast.makeText(this,"Check", Toast.LENGTH_SHORT).show()
             }
             else{
                 var preferences: SharedPreferences = getSharedPreferences("checkbox", MODE_PRIVATE)
                 var editor: SharedPreferences.Editor = preferences.edit()
                 editor.putString("remember","false")
                 editor.apply()
-                Toast.makeText(this,"Uncheck", Toast.LENGTH_SHORT).show()
             }
         }
+        txtbtnForgotPassword.setOnClickListener(){
+            startActivity(Intent(this, ForgotPassword::class.java))
+        }
     }
-
-//    fun signout(){
-//        logout.setOnClickedListener(){
-//            var preferences: SharedPreferences = getSharedPreferences("checkbox", MODE_PRIVATE)
-//            var editor: SharedPreferences.Editor = preferences.edit()
-//            editor.putString("remember","false")
-//            editor.apply()
-//
-//            finish()
-//        }
-//    }
 
     fun signInUser(email:String,password:String){
         auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this){

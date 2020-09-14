@@ -9,7 +9,9 @@ import android.util.Patterns
 import android.view.MotionEvent
 import android.view.View
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.core.view.isVisible
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
@@ -41,7 +43,6 @@ public class Register : AppCompatActivity() {
                             else{
                                 if(passwordPattern.matcher(txtPasswordRegister.text.toString()).matches()){
                                     if(chkboxAgreeTnC.isChecked){
-
                                         createUser(txtEmail.text.toString(),txtPasswordRegister.text.toString())
                                     }
                                     else{
@@ -107,3 +108,4 @@ public class Register : AppCompatActivity() {
     }
 
 }
+

@@ -22,6 +22,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".Register"/>
+        <activity android:name=".ForgotPassword"/>
         <activity android:name=".AccountInfo"/>
         <activity android:name=".AddToCart"/>
         <activity android:name=".Complain"/>
