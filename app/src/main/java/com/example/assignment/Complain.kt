@@ -3,14 +3,11 @@ package com.example.assignment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.complain.*
-import kotlinx.android.synthetic.main.register.*
 
 class Complain:AppCompatActivity() {
     private lateinit var db: DocumentReference
@@ -58,6 +55,7 @@ class Complain:AppCompatActivity() {
                     .set(complain)
                     .addOnSuccessListener { documentReference ->
                         Toast.makeText(this,"Thank you for your feedback, sorry for the inconvenience caused", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this, CustomerService::class.java))
                     }
                     .addOnFailureListener{
                         e -> Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show()
