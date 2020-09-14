@@ -64,7 +64,6 @@
         <item>Terengganu</item>
     </string-array>
     <string name="orderSuccess">Your Order Had Been Placed Successfully</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="checkbox">tzData.checkbox</string>
     <string name="email">tzData.email</string>
