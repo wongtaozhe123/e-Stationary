@@ -39,7 +39,7 @@
                 android:paddingTop="20dp"
                 android:text="Username"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/displayName"
@@ -48,9 +48,8 @@
                 android:layout_marginLeft="@dimen/textMargin"
                 android:layout_marginBottom="@dimen/spacing"
                 android:ems="10"
-                android:gravity="start|top"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="30sp" />
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtPhoneNo"
@@ -61,7 +60,7 @@
                 android:paddingTop="20dp"
                 android:text="Phone Number"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/displayPhoneNo"
@@ -70,8 +69,8 @@
                 android:layout_marginLeft="@dimen/textMargin"
                 android:layout_marginBottom="@dimen/spacing"
                 android:ems="10"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="30sp" />
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtEmail"
@@ -81,7 +80,7 @@
                 android:paddingTop="20dp"
                 android:text="Email Address"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/displayEmail"
@@ -90,8 +89,8 @@
                 android:layout_marginLeft="@dimen/textMargin"
                 android:layout_marginBottom="@dimen/spacing"
                 android:ems="10"
-                android:textColor="@android:color/darker_gray"
-                android:textSize="30sp" />
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/btnLogout"
