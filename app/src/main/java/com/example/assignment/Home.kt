@@ -6,7 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Toast
+import kotlinx.android.synthetic.main.wishlist.*
 import kotlinx.android.synthetic.main.home.*
+import kotlinx.android.synthetic.main.home.imgbtnAccount
+import kotlinx.android.synthetic.main.home.imgbtnCart
+import kotlinx.android.synthetic.main.home.imgbtnCustService
+import kotlinx.android.synthetic.main.home.imgbtnHome
 import kotlinx.android.synthetic.main.register.*
 
 class Home:AppCompatActivity() {
@@ -24,5 +29,21 @@ class Home:AppCompatActivity() {
 //            finish()
 //
 //        }
+
+        imgbtnHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
+        imgbtnCustService.setOnClickListener{
+            startActivity(Intent(this, CustomerService::class.java))
+        }
+
+        imgbtnCart.setOnClickListener{
+            startActivity(Intent(this, AddToCart::class.java))
+        }
+
+        imgbtnAccount.setOnClickListener{
+            startActivity(Intent(this, Settings::class.java))
+        }
     }
 }

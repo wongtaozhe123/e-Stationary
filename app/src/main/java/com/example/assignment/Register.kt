@@ -91,7 +91,7 @@ public class Register : AppCompatActivity() {
                 user.put("Email",txtEmail.text.toString())
                 user.put("phoneNumber",txtPhoneNumber.text.toString())
                 user.put("Username",txtUsernameRegister.text.toString())
-                db.collection("$userN").document("Particulars")
+                db.collection("userParticular").document("$userN")
                     .set(user)
                     .addOnSuccessListener { documentReference -> Log.e("Register succes","User succesfully register")
                         Toast.makeText(this,"Welcome to E-Stationary app", Toast.LENGTH_SHORT).show()
