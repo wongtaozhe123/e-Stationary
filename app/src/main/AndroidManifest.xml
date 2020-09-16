@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".DeliveryDetails">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
@@ -30,13 +31,11 @@
         <activity android:name=".AddToCart"/>
         <activity android:name=".Complain"/>
         <activity android:name=".CustomerService"/>
-        <activity android:name=".MainActivity"/>
         <activity android:name=".Home"/>
         <activity android:name=".Done"/>
         <activity android:name=".ItemDetails"/>
         <activity android:name=".Hcitem"/>
         <activity android:name=".Settings"/>
         <activity android:name=".TalkToUs"/>
-
     </application>
 </manifest>
