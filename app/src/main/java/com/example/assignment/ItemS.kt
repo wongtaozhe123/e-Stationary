@@ -6,6 +6,7 @@ class ItemS {
     /*var image : String? = null*/
     var colorFamily : String? = null
 
+
 /*    constructor(){
 
     }

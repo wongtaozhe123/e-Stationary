@@ -26,6 +26,7 @@ import kotlinx.android.synthetic.main.home.*
 
 import android.os.PersistableBundle
 import android.widget.Toast
+import com.google.firebase.firestore.DocumentReference
 import kotlinx.android.synthetic.main.wishlist.*
 import kotlinx.android.synthetic.main.home.*
 import kotlinx.android.synthetic.main.home.imgbtnAccount
@@ -45,17 +46,6 @@ class Home:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(com.example.assignment.R.layout.home)
-//        var preferences: SharedPreferences = getSharedPreferences("checkbox", MODE_PRIVATE)
-//        var checkbox: String? = preferences.getString("remember","")
-//        logout.setOnClickListener(){
-//            var preferences: SharedPreferences = getSharedPreferences("checkbox", MODE_PRIVATE)
-//            var editor: SharedPreferences.Editor = preferences.edit()
-//            editor.putString("remember","false")
-//            editor.apply()
-//
-//            finish()
-//
-//        }
 
         imgbtnHome.setOnClickListener{
             startActivity(Intent(this, Home::class.java))
@@ -72,7 +62,6 @@ class Home:AppCompatActivity() {
         imgbtnAccount.setOnClickListener(){
             startActivity(Intent(this, Wishlist::class.java))
         }
-        setContentView(com.example.assignment.R.layout.home)
 
         recycleData.setHasFixedSize(true)
         recycleData.layoutManager = LinearLayoutManager(this)
@@ -80,27 +69,30 @@ class Home:AppCompatActivity() {
         retrieveData()
         setData()
 
-        /*listView.layoutManager = LinearLayoutManager(this)*/
-
-        //instantiate adapter
-        /*adapter = ProductFirestoreRecyclerAdapter(options)
-        listView.adapter = adapter*/
-
+        //var db: DocumentReference = FirebaseFirestore.getInstance().document(documentPath)
         val rootRef = FirebaseFirestore.getInstance()
+        val query = rootRef!!.collection("writingInstrument").orderBy(
+            "itemName",
+            Query.Direction.ASCENDING
+        )
+
+
+
+   /*     val rootRef = FirebaseFirestore.getInstance()
         val query = rootRef!!.collection("writingInstrument").orderBy(
             "productName",
             Query.Direction.ASCENDING
         )
 
         val options = FirestoreRecyclerOptions.Builder<ItemS>().setQuery(query, ItemS::class.java).build()
-
+*/
     }
 
     private fun retrieveData() {
         items.clear()
         val db = FirebaseDatabase.getInstance()
             .reference
-            .child("writingInstrument")
+            .child("001")
         db.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (itemSnapShot in snapshot.children) {
@@ -135,7 +127,7 @@ class Home:AppCompatActivity() {
 
                 val itemView = LayoutInflater
                     .from(parent.context)
-                    .inflate(com.example.assignment.R.layout.list_layout, parent, false)
+                    .inflate(R.layout.list_layout, parent, false)
 
                 return ItemSViewHolder(itemView)
             }

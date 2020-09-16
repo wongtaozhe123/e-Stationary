@@ -14,6 +14,7 @@ class ItemSViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
 
     lateinit var itemS_ClickListener: ItemSClickListener
 
+
     fun setItemSClickListener(itemS_ClickListener: ItemSClickListener) {
         this.itemS_ClickListener = itemS_ClickListener
     }
@@ -22,10 +23,12 @@ class ItemSViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
         itemName_text = itemView.findViewById(R.id.itemName) as TextView
         color_text = itemView.findViewById(R.id.colorFamily) as TextView
 
+
         itemView.setOnClickListener {
             view ->  itemS_ClickListener.onClick(view, adapterPosition)
         }
     }
+
 
 }
 
