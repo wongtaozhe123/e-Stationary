@@ -34,6 +34,21 @@ class Complain:AppCompatActivity() {
         btnSendComplain.setOnClickListener(){
             passComplainToFirebase(category)
         }
+        imgbtnHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
+        imgbtnCustService.setOnClickListener{
+            startActivity(Intent(this, CustomerService::class.java))
+        }
+
+        imgbtnCart.setOnClickListener{
+            startActivity(Intent(this, AddToCart::class.java))
+        }
+
+        imgbtnAccount.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
     }
     fun passComplainToFirebase(category: String){
         if(category == "Null" || txtOrderNo.text.toString().isEmpty() || txtComplainDescription.text.toString().isEmpty()){

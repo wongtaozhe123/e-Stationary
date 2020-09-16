@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(){
         var checkbox: String? = preferences.getString("remember","")
         if(checkbox.equals("true")){
             startActivity(Intent(this, Home::class.java))
+            finish()
         }
         btnLogin.setOnClickListener() {
             if(txtUsername.text.trim().toString().isNotEmpty()&&txtPassword.text.trim().toString().isNotEmpty()){
@@ -33,9 +34,11 @@ class MainActivity : AppCompatActivity(){
         }
         btnLoginTemp.setOnClickListener(){
             startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
         btnRegistrationTemp.setOnClickListener(){
             startActivity(Intent(this,Register::class.java))
+            finish()
         }
         chkboxKeepLogin.setOnCheckedChangeListener(){ compoundButton: CompoundButton, b: Boolean ->
             if(compoundButton.isChecked){
@@ -61,6 +64,7 @@ class MainActivity : AppCompatActivity(){
             task ->
             if(task.isSuccessful){
                 startActivity(Intent(this, Home::class.java))
+                finish()
             }
             else{
                 Toast.makeText(this,"Error when signing in, please check your email and password", Toast.LENGTH_SHORT).show()

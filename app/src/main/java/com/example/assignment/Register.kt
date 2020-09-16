@@ -77,9 +77,11 @@ public class Register : AppCompatActivity() {
         }
         btnLoginTemp.setOnClickListener(){
             startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
         btnRegistrationTemp.setOnClickListener(){
             startActivity(Intent(this,Register::class.java))
+            finish()
         }
     }
     fun createUser(email: String, password: String){
@@ -97,6 +99,7 @@ public class Register : AppCompatActivity() {
                         Toast.makeText(this,"Welcome to E-Stationary app", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this,Home::class.java)
                         startActivity(intent)
+                        finish()
                     }
                     .addOnFailureListener{ e -> Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show()}
             }
