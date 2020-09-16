@@ -162,7 +162,6 @@
                             android:id="@+id/deliveryAddress"
                             android:layout_width="293dp"
                             android:layout_height="wrap_content"
-                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
                             android:autofillHints="@string/address"
                             android:background="@drawable/edit_text_border_focus"
                             android:inputType="textPersonName"
