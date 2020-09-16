@@ -1,6 +1,5 @@
 package com.example.assignment
 
-
 class ItemS {
 
     var itemName : String? = null

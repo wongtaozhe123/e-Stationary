@@ -37,5 +37,8 @@
         <activity android:name=".Payment"/>
         <activity android:name=".Settings"/>
         <activity android:name=".TalkToUs"/>
+<!--        <activity android:name=".ItemS"/>-->
+<!--        <view android:name=".ViewHolder.ItemSViewHolder"/>
+        <interface android:name=".Interface.ItemSClickListener"/>-->
     </application>
 </manifest>

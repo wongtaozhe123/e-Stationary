@@ -1,6 +1,5 @@
 package com.example.assignment
 
-import android.R
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -133,7 +132,7 @@ class Home:AppCompatActivity() {
             }*/
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemSViewHolder {
-                //TODO("Not yet implemented")
+
                 val itemView = LayoutInflater
                     .from(parent.context)
                     .inflate(com.example.assignment.R.layout.list_layout, parent, false)
@@ -142,7 +141,7 @@ class Home:AppCompatActivity() {
             }
 
             override fun onBindViewHolder(p0: ItemSViewHolder, p1: Int, p2: ItemS) {
-                //TODO("Not yet implemented")
+
                 p0.setItemSClickListener(p0.itemS_ClickListener)
             }
 
