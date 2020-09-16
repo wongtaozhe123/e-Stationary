@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -28,9 +29,33 @@ class Payment:AppCompatActivity() {
         val taTextview = findViewById<TextView>(R.id.totalAmount)
 
         var nextPbtn: Button = findViewById(R.id.nextPbtn)
-        var backPbtn: Button = findViewById(R.id.backbtn)
+        var backPbtn: Button = findViewById(R.id.backPbtn)
         lateinit var selected:String
         lateinit var selected2:String
+        lateinit var imgbtnHome: ImageButton
+        lateinit var imgbtnCustService: ImageButton
+        lateinit var imgbtnCart: ImageButton
+        lateinit var imgbtnAccount: ImageButton
+        imgbtnHome = findViewById(R.id.imgbtnHome)
+        imgbtnCustService = findViewById(R.id.imgbtnCustService)
+        imgbtnCart = findViewById(R.id.imgbtnCart)
+        imgbtnAccount = findViewById(R.id.imgbtnAccount)
+
+        imgbtnHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
+        imgbtnCustService.setOnClickListener{
+            startActivity(Intent(this, CustomerService::class.java))
+        }
+
+        imgbtnCart.setOnClickListener{
+            startActivity(Intent(this, AddToCart::class.java))
+        }
+
+        imgbtnAccount.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
 
         nextPbtn.setOnClickListener{
             if(selected=="ew"||selected=="cd"||selected=="ob"||selected=="cod"){

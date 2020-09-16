@@ -21,6 +21,30 @@ class Hcitem:AppCompatActivity() {
         val userEmail= user?.email
         val documentPath= "cart/$userEmail"
         var db:DocumentReference = FirebaseFirestore.getInstance().document(documentPath)
+        lateinit var imgbtnHome:ImageButton
+        lateinit var imgbtnCustService:ImageButton
+        lateinit var imgbtnCart:ImageButton
+        lateinit var imgbtnAccount:ImageButton
+        imgbtnHome = findViewById(R.id.imgbtnHome)
+        imgbtnCustService = findViewById(R.id.imgbtnCustService)
+        imgbtnCart = findViewById(R.id.imgbtnCart)
+        imgbtnAccount = findViewById(R.id.imgbtnAccount)
+
+        imgbtnHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
+        imgbtnCustService.setOnClickListener{
+            startActivity(Intent(this, CustomerService::class.java))
+        }
+
+        imgbtnCart.setOnClickListener{
+            startActivity(Intent(this, AddToCart::class.java))
+        }
+
+        imgbtnAccount.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
 
         addtocart.setOnClickListener{
             val quantity = findViewById<EditText>(R.id.quantity)
