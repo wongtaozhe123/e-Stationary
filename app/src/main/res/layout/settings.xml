@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/settingsBackground">
+    android:background="@color/white">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/settingsBackground">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,140 +27,80 @@
                 android:id="@+id/imgbtnProfPic"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/spacing"
                 android:background="@android:drawable/menuitem_background"
                 app:srcCompat="@drawable/user_icon" />
-
-            <Button
-                android:id="@+id/btnChangeProfPic"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="@android:drawable/menuitem_background"
-                android:text="Change Profile Picture"
-                android:textColor="@color/colorPrimaryDark" />
 
             <TextView
                 android:id="@+id/txtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textMargin"
                 android:paddingTop="20dp"
-                android:text="Name"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/inputName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="example: David Matthews"
-                android:inputType="textMultiLine" />
+                android:text="Username"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/txtPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingTop="20dp"
-                android:text="Password"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/inputPassword"
+                android:id="@+id/displayName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textMargin"
+                android:layout_marginBottom="@dimen/spacing"
                 android:ems="10"
-                android:hint="example: sbfu$%373"
-                android:inputType="textPassword" />
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtPhoneNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textMargin"
                 android:layout_weight="1"
                 android:paddingTop="20dp"
                 android:text="Phone Number"
-                android:textColor="@android:color/black" />
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
 
-            <EditText
-                android:id="@+id/inputPhoneNo"
+            <TextView
+                android:id="@+id/displayPhoneNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textMargin"
+                android:layout_marginBottom="@dimen/spacing"
                 android:ems="10"
-                android:hint="example: 016 345 2645"
-                android:inputType="phone" />
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textMargin"
                 android:paddingTop="20dp"
                 android:text="Email Address"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/inputEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="example: mdav@gmail.com"
-                android:inputType="textEmailAddress" />
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/txtGender"
+                android:id="@+id/displayEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:text="Gender"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/inputGender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/textMargin"
+                android:layout_marginBottom="@dimen/spacing"
                 android:ems="10"
-                android:gravity="start|top"
-                android:hint='example: "F" or "M"'
-                android:inputType="textMultiLine" />
-
-            <TextView
-                android:id="@+id/txtBirthday"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:text="Birthday"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/inputBirthday"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="example: 17/08/2015"
-                android:inputType="date" />
-
-            <TextView
-                android:id="@+id/txtAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:text="Address"
-                android:textColor="@android:color/black" />
-
-            <EditText
-                android:id="@+id/inputAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="example: Jalan Klang Lama No.37"
-                android:inputType="textPostalAddress" />
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
             <Button
-                android:id="@+id/btnSave"
+                android:id="@+id/btnLogout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="140dp"
                 android:layout_marginTop="20dp"
-                android:text="Save Changes" />
+                android:padding="20dp"
+                android:text="Log Out"
+                android:textSize="15sp" />
 
         </LinearLayout>
     </ScrollView>

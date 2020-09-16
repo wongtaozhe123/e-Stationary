@@ -18,5 +18,20 @@ class CustomerService:AppCompatActivity() {
         imgbtnChat.setOnClickListener(){
             startActivity(Intent(this,TalkToUs::class.java))
         }
+        imgbtnHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
+        imgbtnCustService.setOnClickListener{
+            startActivity(Intent(this, CustomerService::class.java))
+        }
+
+        imgbtnCart.setOnClickListener{
+            startActivity(Intent(this, AddToCart::class.java))
+        }
+
+        imgbtnAccount.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
     }
 }

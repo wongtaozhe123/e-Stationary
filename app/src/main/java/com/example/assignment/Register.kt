@@ -6,12 +6,17 @@ import android.os.Bundle
 import android.service.autofill.RegexValidator
 import android.util.Log
 import android.util.Patterns
+import android.view.MotionEvent
 import android.view.View
 import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.core.view.isVisible
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.r0adkll.slidr.Slidr
+import com.r0adkll.slidr.model.SlidrInterface
 import kotlinx.android.synthetic.main.register.*
 import java.util.regex.Pattern
 
@@ -72,9 +77,11 @@ public class Register : AppCompatActivity() {
         }
         btnLoginTemp.setOnClickListener(){
             startActivity(Intent(this,MainActivity::class.java))
+            finish()
         }
         btnRegistrationTemp.setOnClickListener(){
             startActivity(Intent(this,Register::class.java))
+            finish()
         }
     }
     fun createUser(email: String, password: String){
@@ -86,12 +93,13 @@ public class Register : AppCompatActivity() {
                 user.put("Email",txtEmail.text.toString())
                 user.put("phoneNumber",txtPhoneNumber.text.toString())
                 user.put("Username",txtUsernameRegister.text.toString())
-                db.collection("$userN").document("Particulars")
+                db.collection("userParticular").document("$userN")
                     .set(user)
                     .addOnSuccessListener { documentReference -> Log.e("Register succes","User succesfully register")
                         Toast.makeText(this,"Welcome to E-Stationary app", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this,Home::class.java)
                         startActivity(intent)
+                        finish()
                     }
                     .addOnFailureListener{ e -> Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show()}
             }
@@ -101,4 +109,6 @@ public class Register : AppCompatActivity() {
             }
         }
     }
+
 }
+

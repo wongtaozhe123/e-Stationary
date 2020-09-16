@@ -3,14 +3,11 @@ package com.example.assignment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.complain.*
-import kotlinx.android.synthetic.main.register.*
 
 class Complain:AppCompatActivity() {
     private lateinit var db: DocumentReference
@@ -37,6 +34,21 @@ class Complain:AppCompatActivity() {
         btnSendComplain.setOnClickListener(){
             passComplainToFirebase(category)
         }
+        imgbtnHome.setOnClickListener{
+            startActivity(Intent(this, Home::class.java))
+        }
+
+        imgbtnCustService.setOnClickListener{
+            startActivity(Intent(this, CustomerService::class.java))
+        }
+
+        imgbtnCart.setOnClickListener{
+            startActivity(Intent(this, AddToCart::class.java))
+        }
+
+        imgbtnAccount.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
     }
     fun passComplainToFirebase(category: String){
         if(category == "Null" || txtOrderNo.text.toString().isEmpty() || txtComplainDescription.text.toString().isEmpty()){
@@ -45,7 +57,7 @@ class Complain:AppCompatActivity() {
         else{
             val user = FirebaseAuth.getInstance().currentUser;
             if(user == null){
-                Toast.makeText(this,"Welcome to E-Stationary app", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Please sign in before doing any complains", Toast.LENGTH_SHORT).show()
             }
             else{
                 val email = user.email
@@ -58,6 +70,7 @@ class Complain:AppCompatActivity() {
                     .set(complain)
                     .addOnSuccessListener { documentReference ->
                         Toast.makeText(this,"Thank you for your feedback, sorry for the inconvenience caused", Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this, CustomerService::class.java))
                     }
                     .addOnFailureListener{
                         e -> Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show()

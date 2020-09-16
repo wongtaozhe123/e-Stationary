@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/defaultBackground"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imgbtnSettings"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginRight="@dimen/icon_margin"
+                        android:layout_marginBottom="@dimen/icon_margin"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/menuitem_background"
+                        android:paddingLeft="@dimen/icon_padding"
+                        android:paddingTop="@dimen/icon_padding"
+                        android:paddingRight="@dimen/icon_padding"
+                        android:paddingBottom="@dimen/icon_padding"
+                        app:srcCompat="@android:drawable/ic_menu_manage" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imgProfPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:paddingTop="0dp"
+                    app:srcCompat="@drawable/user_icon" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/black"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnWishlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="My Wishlist"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnOrders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:text="My Orders"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btnNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Notifications"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/order_height"
+                        android:layout_marginBottom="@dimen/spacing"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/order2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order No 2744341"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/orderdate2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Placed on 5 May 2019  20:19:24"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/orderdate2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paid on 5 May 2019  20:23:45"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgorder2"
+                                android:layout_width="@dimen/notf_Img_width"
+                                android:layout_height="@dimen/notf_Img_height"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/parker_pen_img" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/orderdet2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Parker Pen"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/orderdet2_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Color Family: Silver"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/orderdet2_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="X 1"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/orderdet2_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Delivered"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/orderdet2_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Total: RM25.00"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/order_height"
+                        android:layout_marginBottom="@dimen/spacing"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/order1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order No 2744736"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/orderdate1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Placed on 24 May 2019  13:15:20"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/orderdate1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Paid on 24 May 2019  13:18:45"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imgorder1"
+                                android:layout_width="@dimen/notf_Img_width"
+                                android:layout_height="@dimen/notf_Img_height"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/paper_clip_img" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/orderdet1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Paper Clip"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/orderdet1_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Color Family: Multicolor"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/orderdet1_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="X 1"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/orderdet1_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Pending"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/holo_red_dark" />
+
+                                <TextView
+                                    android:id="@+id/orderdet1_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Total: RM0.60"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="570dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/defaultBackground"
+            android:foregroundGravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgbtnHome"
+                android:layout_width="112dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:background="@android:drawable/menuitem_background"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imgbtnCustService"
+                android:layout_width="103dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:background="@android:drawable/menuitem_background"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/customer_service" />
+
+            <ImageButton
+                android:id="@+id/imgbtnCart"
+                android:layout_width="103dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:background="@android:drawable/menuitem_background"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/shopping_cart" />
+
+            <ImageButton
+                android:id="@+id/imgbtnAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/icon_margin"
+                android:layout_marginTop="@dimen/icon_margin"
+                android:layout_marginRight="@dimen/icon_margin"
+                android:layout_marginBottom="@dimen/icon_margin"
+                android:layout_weight="1"
+                android:background="@android:drawable/menuitem_background"
+                android:paddingLeft="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingBottom="@dimen/icon_padding"
+                app:srcCompat="@drawable/user" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
