@@ -31,7 +31,7 @@ class ForgotPassword : AppCompatActivity() {
 
     fun checkCredentials(){
         var tempEmail = txtEmail.text.toString()
-        db.collection("$tempEmail").document("Particulars")
+        db.collection("userParticular").document("$tempEmail")
             .get().addOnSuccessListener { result ->
                 if(result!=null){
 
