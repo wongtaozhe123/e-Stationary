@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.register.*
 
@@ -13,6 +14,9 @@ class AddToCart:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.add_to_cart)
 
-
+        var nextSCbtn: Button = findViewById(R.id.nextSCbtn)
+        nextSCbtn.setOnClickListener{
+            startActivity(Intent(this, DeliveryDetails::class.java))
+        }
     }
 }

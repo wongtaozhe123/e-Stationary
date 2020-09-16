@@ -13,8 +13,7 @@ import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.payment.*
 import kotlinx.android.synthetic.main.register.*
-lateinit var selected:String
-lateinit var selected2:String
+
 class Payment:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,8 +26,11 @@ class Payment:AppCompatActivity() {
         val opaTextview = findViewById<TextView>(R.id.orderPaymentAmount)
         val daTextview = findViewById<TextView>(R.id.discountAmount)
         val taTextview = findViewById<TextView>(R.id.totalAmount)
-        lateinit var nextPbtn: Button
-        lateinit var backPbtn: Button
+
+        var nextPbtn: Button = findViewById(R.id.nextPbtn)
+        var backPbtn: Button = findViewById(R.id.backbtn)
+        lateinit var selected:String
+        lateinit var selected2:String
 
         nextPbtn.setOnClickListener{
             if(selected=="ew"||selected=="cd"||selected=="ob"||selected=="cod"){
@@ -83,7 +85,7 @@ class Payment:AppCompatActivity() {
             codbtn.setTextColor(Color.BLACK)
             codbtn.setBackgroundResource(R.drawable.unselected_button)
             selected="ew"
-            selectedbutton()
+
         }
 
         cdbtn.setOnClickListener{
@@ -96,7 +98,7 @@ class Payment:AppCompatActivity() {
             codbtn.setTextColor(Color.BLACK)
             codbtn.setBackgroundResource(R.drawable.unselected_button)
             selected="cd"
-            selectedbutton()
+
         }
 
         obbtn.setOnClickListener{
@@ -109,7 +111,7 @@ class Payment:AppCompatActivity() {
             codbtn.setTextColor(Color.BLACK)
             codbtn.setBackgroundResource(R.drawable.unselected_button)
             selected="ob"
-            selectedbutton()
+
         }
 
         codbtn.setOnClickListener{
@@ -122,23 +124,8 @@ class Payment:AppCompatActivity() {
             codbtn.setTextColor(Color.WHITE)
             codbtn.setBackgroundResource(R.drawable.selected_button)
             selected="cod"
-            selectedbutton()
-        }
-    }
-    fun selectedbutton(){
-        val a=findViewById<TextView>(R.id.orderPaymentAmount)
 
-        if(selected=="ew"){
-            a.setText(selected).toString()
-        }
-        if(selected=="cd"){
-            a.setText(selected).toString()
-        }
-        if(selected=="ob"){
-            a.setText(selected).toString()
-        }
-        if(selected=="cod"){
-            a.setText(selected).toString()
         }
     }
+
 }

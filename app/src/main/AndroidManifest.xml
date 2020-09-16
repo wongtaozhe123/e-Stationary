@@ -34,6 +34,7 @@
         <activity android:name=".Home"/>
         <activity android:name=".Done"/>
         <activity android:name=".ItemDetails"/>
+        <activity android:name=".DeliveryDetails"/>
         <activity android:name=".Hcitem"/>
         <activity android:name=".Settings"/>
         <activity android:name=".TalkToUs"/>

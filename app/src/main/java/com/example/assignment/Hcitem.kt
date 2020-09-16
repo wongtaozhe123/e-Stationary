@@ -1,5 +1,6 @@
 package com.example.assignment
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -49,6 +50,10 @@ class Hcitem:AppCompatActivity() {
 
             db.collection("cartDetail").document("pencil case").set(u)
 
+        }
+        var toCartbtn: Button = findViewById(R.id.toCartbtn)
+        toCartbtn.setOnClickListener {
+            startActivity(Intent(this, AddToCart::class.java))
         }
 
     }

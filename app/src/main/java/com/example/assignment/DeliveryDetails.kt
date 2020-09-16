@@ -21,6 +21,7 @@ class DeliveryDetails:AppCompatActivity() {
     lateinit var additionalInformation: EditText
     lateinit var additionalInformation2: EditText
     lateinit var nextDDbtn:Button
+    lateinit var backbtn:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +45,7 @@ class DeliveryDetails:AppCompatActivity() {
         additionalInformation = findViewById(R.id.addInfor)
         additionalInformation2 = findViewById(R.id.addInfor2)
         nextDDbtn = findViewById(R.id.nextbtn)
+        backbtn = findViewById(R.id.backbtn)
 
         nextDDbtn.setOnClickListener{
             nextDD()

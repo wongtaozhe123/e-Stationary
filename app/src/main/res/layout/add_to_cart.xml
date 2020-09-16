@@ -14,6 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="-16dp">
@@ -132,8 +133,81 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="207dp" />
+                android:layout_height="365dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="-200dp"
+                android:background="@color/defaultBackground"
+                android:orientation="horizontal">
 
+                <ImageButton
+                    android:id="@+id/imgbtnHome"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCustService"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/customer_service" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCart"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/shopping_cart" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/user" />
+
+            </LinearLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:paddingLeft="20dp"
@@ -158,7 +232,7 @@
                     app:layout_constraintVertical_bias="0.245" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/nextSCbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="274dp"
@@ -176,5 +250,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

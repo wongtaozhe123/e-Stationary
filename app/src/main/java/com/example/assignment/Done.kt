@@ -13,7 +13,7 @@ class Done:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.done)
 
-        lateinit var donebtn: Button
+        var donebtn: Button = findViewById(R.id.donebtn)
 
         donebtn.setOnClickListener{
             startActivity(Intent(this, Hcitem::class.java))
