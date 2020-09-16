@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".DeliveryDetails">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,6 +21,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <activity android:name=".Payment"/>
         <activity android:name=".Register"/>
         <activity android:name=".ForgotPassword"/>
         <activity android:name=".Wishlist"/>
@@ -29,12 +30,13 @@
         <activity android:name=".AddToCart"/>
         <activity android:name=".Complain"/>
         <activity android:name=".CustomerService"/>
-        <activity android:name=".DeliveryDetails"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".Home"/>
         <activity android:name=".Done"/>
         <activity android:name=".ItemDetails"/>
-        <activity android:name=".Payment"/>
+        <activity android:name=".Hcitem"/>
         <activity android:name=".Settings"/>
         <activity android:name=".TalkToUs"/>
+
     </application>
 </manifest>
