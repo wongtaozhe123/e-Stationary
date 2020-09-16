@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/colorFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <ImageView
+            android:id="@+id/monamiimg"
+            android:layout_width="160dp"
+            android:layout_height="129dp"
+            app:srcCompat="@drawable/monamimarker" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="monami marker" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <EditText
+
+            android:id="@+id/quantity"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:background="@drawable/edit_text_border_focus"
+            android:inputType="number">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_width="128dp"
+            android:layout_height="35dp"
+            android:text="Add to cart" />
+
+        <TextView
+            android:id="@+id/colorFamily2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="138dp"
+            android:layout_height="95dp"
+            app:srcCompat="@drawable/pencilcase" />
+
+        <TextView
+            android:id="@+id/itemName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pencil case" />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+        <EditText
+
+            android:id="@+id/quantity2"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:background="@drawable/edit_text_border_focus"
+            android:inputType="number">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/addtocart2"
+            android:layout_width="128dp"
+            android:layout_height="35dp"
+            android:text="Add to cart" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/toCartbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Cart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

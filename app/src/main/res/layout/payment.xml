@@ -131,23 +131,183 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-
                 android:padding="10dp"
                 android:layout_height="match_parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <TableLayout
                     android:layout_width="match_parent"
-                    android:padding="10dp"
                     android:background="@drawable/clear_cart_button"
-                    android:layout_height="match_parent"/>
+                    android:shrinkColumns="*"
+                    android:layout_height="match_parent">
 
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_span="2"
+                        android:background="@drawable/title"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_span="2"
+                            android:textColor="@color/black"
+                            android:paddingLeft="5dp"
+                            android:textStyle="bold"
+                            android:layout_height="29dp"
+                            android:text="@string/paymentTitle1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@drawable/black_border"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/orderPayment"
+                            android:layout_width="197.5dp"
+                            android:layout_height="29dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/orderPayment"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/orderPaymentAmount"
+                            android:layout_width="197.5dp"
+                            android:layout_height="29dp"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text="TextView"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@drawable/black_border"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/discount"
+                            android:layout_width="197.5dp"
+                            android:layout_height="29dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/discount"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/discountAmount"
+                            android:layout_width="197.5dp"
+                            android:layout_height="29dp"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text="TextView"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@drawable/black_border"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_width="197.5dp"
+                            android:layout_height="29dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/total"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/totalAmount"
+                            android:layout_width="197.5dp"
+                            android:layout_height="29dp"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text="TextView"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@drawable/title"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:id="@+id/textView30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="29dp"
+                            android:layout_span="2"
+                            android:paddingLeft="5dp"
+                            android:text="@string/paymentTitle2"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+
+                        android:background="@drawable/black_border"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/cdCardbtn"
+                            android:layout_width="163dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/payment_button"
+                            android:padding="2dp"
+                            android:text="@string/card" />
+
+                        <Button
+                            android:id="@+id/ewalletbtn"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/payment_button"
+                            android:padding="2dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ewallet" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@drawable/black_border"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/onlineBankingbtn"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/payment_button"
+                            android:padding="2dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/onlineBanking" />
+
+                        <Button
+                            android:id="@+id/cashOnDeliverybtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/payment_button"
+                            android:padding="2dp"
+                            android:text="@string/cashOnDelivery" />
+                    </TableRow>
+
+                </TableLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="36dp">
 
                 <Button
-                    android:id="@+id/nextButton"
+                    android:id="@+id/backPbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:background="@color/light_red"
+                    android:text="@string/backButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/nextPbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="17dp"
@@ -159,20 +319,81 @@
                     app:layout_constraintTop_toBottomOf="@+id/button"
                     app:layout_constraintVertical_bias="0.0" />
 
-                <Button
-                    android:id="@+id/backButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:background="@color/light_red"
-                    android:text="@string/backButton"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="155dp"
+                android:background="@color/defaultBackground"
+                android:orientation="horizontal">
 
+                <ImageButton
+                    android:id="@+id/imgbtnHome"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCustService"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/customer_service" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCart"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/shopping_cart" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginRight="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/menuitem_background"
+                    android:paddingLeft="@dimen/icon_padding"
+                    android:paddingTop="@dimen/icon_padding"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:paddingBottom="@dimen/icon_padding"
+                    app:srcCompat="@drawable/user" />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

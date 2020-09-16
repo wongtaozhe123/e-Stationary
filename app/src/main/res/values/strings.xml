@@ -76,4 +76,13 @@
     <string name="christmas">Christmas Sale</string>
     <string name="christmas_det">Shop on 25 December for a lot of discounts on several of our products.</string>
     <string name="date2">03-11-2019  13:30</string>
+    <string name="paymentTitle1">1. Payment Details</string>
+    <string name="paymentTitle2">2. Payment Method</string>
+    <string name="orderPayment">Order Payment</string>
+    <string name="discount">Discount</string>
+    <string name="total">Total</string>
+    <string name="onlineBanking">Online Banking</string>
+    <string name="ewallet">E-Wallet</string>
+    <string name="cashOnDelivery">Cash On Delivery</string>
+    <string name="card">Credit/Debit Card</string>
 </resources>
