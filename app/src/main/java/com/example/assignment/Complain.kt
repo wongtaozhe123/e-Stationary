@@ -42,7 +42,7 @@ class Complain:AppCompatActivity() {
         else{
             val user = FirebaseAuth.getInstance().currentUser;
             if(user == null){
-                Toast.makeText(this,"Welcome to E-Stationary app", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Please sign in before doing any complains", Toast.LENGTH_SHORT).show()
             }
             else{
                 val email = user.email
