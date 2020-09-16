@@ -10,7 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.wishlist.*
 
-class Wishlist: AppCompatActivity() {
+class Wishlist:AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,8 +18,17 @@ class Wishlist: AppCompatActivity() {
 
         getUserProfile()
 
-        btnWishlist.setTextColor(Color.parseColor("#FF000000"))
-        btnWishlist.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+        btnWishlist.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
+
+        btnOrders.setOnClickListener(){
+            startActivity(Intent(this, Orders::class.java))
+        }
+
+        btnNotifications.setOnClickListener(){
+            startActivity(Intent(this, Notifications::class.java))
+        }
 
         imgbtnHome.setOnClickListener(){
             startActivity(Intent(this, Home::class.java))

@@ -42,8 +42,8 @@ class Home:AppCompatActivity() {
             startActivity(Intent(this, AddToCart::class.java))
         }
 
-        imgbtnAccount.setOnClickListener{
-            startActivity(Intent(this, Settings::class.java))
+        imgbtnAccount.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
         }
     }
 }

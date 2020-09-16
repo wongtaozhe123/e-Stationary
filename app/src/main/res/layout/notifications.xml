@@ -85,9 +85,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@android:color/white"
                     android:text="Notifications"
-                    android:textColor="@color/white" />
+                    android:textColor="@android:color/black" />
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                             android:layout_width="@dimen/notf_Img_width"
                             android:layout_height="@dimen/notf_Img_height"
                             android:layout_weight="1"
-                            tools:src="@drawable/christmas" />
+                            app:srcCompat="@drawable/christmas" />
 
                         <LinearLayout
                             android:layout_width="@dimen/notif_dets"
@@ -154,7 +154,7 @@
                             android:layout_width="@dimen/notf_Img_width"
                             android:layout_height="@dimen/notf_Img_height"
                             android:layout_weight="1"
-                            tools:src="@drawable/welcome" />
+                            app:srcCompat="@drawable/welcome" />
 
                         <LinearLayout
                             android:layout_width="@dimen/notif_dets"

@@ -22,6 +22,10 @@ class Settings:AppCompatActivity() {
 
         getUserProfile()
 
+        imgbtnBack.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
+
         btnLogout.setOnClickListener(){
             var preferences: SharedPreferences = getSharedPreferences("checkbox", MODE_PRIVATE)
             var editor: SharedPreferences.Editor = preferences.edit()

@@ -23,7 +23,9 @@
 
         <activity android:name=".Register"/>
         <activity android:name=".ForgotPassword"/>
-        <activity android:name=".AccountInfo"/>
+        <activity android:name=".Wishlist"/>
+        <activity android:name=".Orders"/>
+        <activity android:name=".Notifications"/>
         <activity android:name=".AddToCart"/>
         <activity android:name=".Complain"/>
         <activity android:name=".CustomerService"/>
