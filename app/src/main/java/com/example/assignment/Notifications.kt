@@ -9,8 +9,18 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.notifications.*
+import kotlinx.android.synthetic.main.notifications.btnNotifications
+import kotlinx.android.synthetic.main.notifications.btnOrders
+import kotlinx.android.synthetic.main.notifications.btnWishlist
+import kotlinx.android.synthetic.main.notifications.imgbtnAccount
+import kotlinx.android.synthetic.main.notifications.imgbtnCart
+import kotlinx.android.synthetic.main.notifications.imgbtnCustService
+import kotlinx.android.synthetic.main.notifications.imgbtnHome
+import kotlinx.android.synthetic.main.notifications.imgbtnSettings
+import kotlinx.android.synthetic.main.notifications.username
+import kotlinx.android.synthetic.main.wishlist.*
 
-class Notifications: AppCompatActivity() {
+class Notifications:AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,8 +28,17 @@ class Notifications: AppCompatActivity() {
 
         getUserProfile()
 
-        btnNotifications.setTextColor(Color.parseColor("#FF000000"))
-        btnNotifications.setBackgroundColor(Color.parseColor("#FFFFFFFF"))
+        btnWishlist.setOnClickListener(){
+            startActivity(Intent(this, Wishlist::class.java))
+        }
+
+        btnOrders.setOnClickListener(){
+            startActivity(Intent(this, Orders::class.java))
+        }
+
+        btnNotifications.setOnClickListener(){
+            startActivity(Intent(this, Notifications::class.java))
+        }
 
         imgbtnHome.setOnClickListener() {
             startActivity(Intent(this, Home::class.java))

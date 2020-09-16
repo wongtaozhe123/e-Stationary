@@ -66,9 +66,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@color/white"
                     android:text="My Wishlist"
-                    android:textColor="@color/white" />
+                    android:textColor="@android:color/black" />
 
                 <Button
                     android:id="@+id/btnOrders"
@@ -110,11 +110,12 @@
                             android:layout_width="@dimen/notf_Img_width"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            tools:src="@drawable/paper_clip_img" />
+                            app:srcCompat="@drawable/paper_clip_img" />
 
                         <LinearLayout
                             android:layout_width="@dimen/notif_dets"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -148,19 +149,19 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:id="@+id/remove1"
+                                    android:id="@+id/imgRemove"
                                     android:layout_width="50dp"
                                     android:layout_height="40dp"
                                     android:layout_marginRight="100dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/remove" />
+                                    app:srcCompat="@drawable/remove" />
 
                                 <ImageView
-                                    android:id="@+id/addToCart1"
-                                    android:layout_width="50dp"
-                                    android:layout_height="40dp"
+                                    android:id="@+id/imgAddToCart"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/addtocart" />
+                                    app:srcCompat="@drawable/addtocart" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -173,14 +174,15 @@
 
                         <ImageView
                             android:id="@+id/imgitem2"
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/notf_Img_width"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:src="@drawable/highlighter_img" />
+                            app:srcCompat="@drawable/highlighter_img" />
 
                         <LinearLayout
                             android:layout_width="@dimen/notif_dets"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -214,19 +216,19 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:id="@+id/remove2"
+                                    android:id="@+id/imgRemove1"
                                     android:layout_width="50dp"
                                     android:layout_height="40dp"
                                     android:layout_marginRight="100dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/remove" />
+                                    app:srcCompat="@drawable/remove" />
 
                                 <ImageView
-                                    android:id="@+id/addToCart2"
-                                    android:layout_width="50dp"
-                                    android:layout_height="40dp"
+                                    android:id="@+id/imgAddToCart1"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/addtocart" />
+                                    app:srcCompat="@drawable/addtocart" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -239,15 +241,15 @@
 
                         <ImageView
                             android:id="@+id/imgitem3"
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/notf_Img_width"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:src="@drawable/highlighter_img"
                             app:srcCompat="@drawable/drawing_board_img" />
 
                         <LinearLayout
                             android:layout_width="@dimen/notif_dets"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -281,19 +283,19 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:id="@+id/remove3"
+                                    android:id="@+id/imgRemove2"
                                     android:layout_width="50dp"
                                     android:layout_height="40dp"
                                     android:layout_marginRight="100dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/remove" />
+                                    app:srcCompat="@drawable/remove" />
 
                                 <ImageView
-                                    android:id="@+id/addToCart3"
-                                    android:layout_width="50dp"
-                                    android:layout_height="40dp"
+                                    android:id="@+id/imgAddToCart2"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/addtocart" />
+                                    app:srcCompat="@drawable/addtocart" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -302,19 +304,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/wishlist_height"
                         android:layout_marginTop="@dimen/spacing"
+                        android:layout_marginBottom="@dimen/spacing"
                         android:orientation="horizontal">
 
                         <ImageView
                             android:id="@+id/imgitem4"
-                            android:layout_width="wrap_content"
+                            android:layout_width="@dimen/notf_Img_width"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:src="@drawable/highlighter_img"
                             app:srcCompat="@drawable/parker_pen_img" />
 
                         <LinearLayout
                             android:layout_width="@dimen/notif_dets"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -348,19 +351,19 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:id="@+id/remove4"
+                                    android:id="@+id/imgRemove3"
                                     android:layout_width="50dp"
                                     android:layout_height="40dp"
                                     android:layout_marginRight="100dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/remove" />
+                                    app:srcCompat="@drawable/remove" />
 
                                 <ImageView
-                                    android:id="@+id/addToCart"
-                                    android:layout_width="50dp"
-                                    android:layout_height="40dp"
+                                    android:id="@+id/imgAddToCart3"
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
                                     android:layout_weight="1"
-                                    tools:src="@drawable/addtocart" />
+                                    app:srcCompat="@drawable/addtocart" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
