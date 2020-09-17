@@ -112,7 +112,7 @@
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageViewS"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_below="@+id/e_stationary"
@@ -121,13 +121,13 @@
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="50dp"
-                app:srcCompat="@drawable/file_img" />
+                app:srcCompat="@drawable/parker_pen_img" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/itemNameS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView3"
+                android:layout_below="@+id/imageViewS"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="50dp"
@@ -136,10 +136,10 @@
                 android:text="Product_Name" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/colorFamilyS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView9"
+                android:layout_below="@+id/itemNameS"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="50dp"
@@ -148,10 +148,10 @@
                 android:text="Color Family" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/priceS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView12"
+                android:layout_below="@+id/colorFamilyS"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="50dp"
@@ -163,7 +163,7 @@
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView13"
+                android:layout_below="@+id/priceS"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"

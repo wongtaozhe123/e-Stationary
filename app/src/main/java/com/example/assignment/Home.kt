@@ -63,6 +63,10 @@ class Home:AppCompatActivity() {
             startActivity(Intent(this, Wishlist::class.java))
         }
 
+        button6.setOnClickListener{
+            startActivity(Intent(this, ItemDetails::class.java))
+        }
+
         recycleData.setHasFixedSize(true)
         recycleData.layoutManager = LinearLayoutManager(this)
 
