@@ -63,7 +63,7 @@ class Home:AppCompatActivity() {
             startActivity(Intent(this, Wishlist::class.java))
         }
 
-        button6.setOnClickListener{
+        button3.setOnClickListener{
             startActivity(Intent(this, ItemDetails::class.java))
         }
 
